@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我的網頁</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="hi.css">
+	<style>
+        /* RWD 設定 */
+        @media only screen and (max-width: 1024px) {
+            /* 桌上型電腦：至少要1024px以上 */
+            /* 在1024px以下的螢幕寬度時應用的樣式 */
+            .btn-buy {
+                width: 150px;
+                bottom: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .btn-listen {
+                bottom: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 150px;
+            }
+        }
+        
+        @media only screen and (max-width: 720px) {
+            /* 平板電腦：720px～1024px */
+            /* 在720px以下的螢幕寬度時應用的樣式 */
+            .btn-buy {
+                width: 150px;
+                bottom: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .btn-listen {
+                bottom: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 150px;
+            }
+        }
+        
+        @media only screen and (max-width: 320px) {
+            /* 手機：320px～720px */
+            /* 在320px以下的螢幕寬度時應用的樣式 */
+            .btn-buy {
+                width: 120px;
+                bottom: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .btn-listen {
+                bottom: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+	<div class="bg-container">
+		<div class="bg"></div>
+	</div>
+	<div class="btn-buy">
+		<a href="#" class="btn buy">
+			<img src="buy-button.png" alt="Buy Now">
+		</a>
+	</div>
+
+	<div class="btn-listen">
+		<a href="#" class="btn listen">
+			<img src="listen.png" alt="listen">
+		</a>
+	</div>
+</body>
+</html>

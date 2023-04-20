@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+  }
+  
+  body {
+    background-image: url("edm.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    height: auto;
+    width: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .bg-container {
+    position: relative;
+    height: 130vh;
+  }
+  
+  .bg {
+    background-image: url("edm.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: -100px 0;
+    top: 0;
+    left: 0;
+    height: 200%;
+    width: 110%;
+    z-index: -1;
+  }
+  
+  .btn-buy {
+    position: fixed;
+    width: 200px;
+    bottom: 120px;
+    left: 750px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+    background-color: #00000000;
+    color: #FFF;
+ 
+    transition: transform 0.3s ease;
+      }
+      
+      .btn:hover {
+        transform: translateY(-5px);
+      }
+  
+  .btn-listen {
+    position: fixed;
+    bottom: 120px;
+    left: 1150px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    padding-bottom: 30px;
+  }
+  
+  
+
+
+  
+  .listen {
+    margin-right: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .btn-container {
+      flex-direction: column;
+      bottom: unset;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .btn {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* 在螢幕寬度小於或等於 768 像素時應用的樣式 */
+    /* 例如： */
+    .btn-buy {
+      width: 150px;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .btn-listen {
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+    }
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .btn-container {
+      flex-direction: column;
+    }
+  }
+    
